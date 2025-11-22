@@ -18,7 +18,7 @@ const renderText = (text, className, baseWeight = 400) => {
   ));
 };
 const setupTextHover = (container, type) => {
-  if (!container) return;
+  if (!container) return () => {};
 
   const lettetrs = container.querySelectorAll("span");
   const { min, max, default: base } = FORNT_WEIGHTS[type];
@@ -76,6 +76,9 @@ const Welcome = () => {
       <h1 ref={titleRef} className="mt-7">
         {renderText("portfolio", "text-7xl font-bold italic font-georama")}
       </h1>
+      <div className="small-screen">
+          <p>This website is designed for desktop/tablet view not for mobile</p>
+      </div>
     </section>
   );
 };
