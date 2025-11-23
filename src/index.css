@@ -3,11 +3,11 @@
 @import "tailwindcss";
 
 html,
-body {
+body {  
   width: 100dvw;
   overflow: hidden;
   height: 100dvh;
-  background-image: url("/images/wallpaper.png");
+  background-image: url("https://wallpapercave.com/wp/wp8283631.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
