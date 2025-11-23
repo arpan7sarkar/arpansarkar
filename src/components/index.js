@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
 import Welcome from "./Welcome";
 import Dock from "./Dock";
-export { Navbar, Welcome , Dock};
+import WindowControl from "./WindowControl";
+export { Navbar, Welcome , Dock, WindowControl};
