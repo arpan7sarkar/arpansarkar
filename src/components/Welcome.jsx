@@ -68,13 +68,13 @@ const Welcome = () => {
     <section id="welcome">
       <p ref={subtitleRef}>
         {renderText(
-          "Hey I'm Arpan ! Welcome to my",
+          "Hello I am arpan learning",
           "text-3xl font-georama",
           100
         )}
       </p>
       <h1 ref={titleRef} className="mt-7">
-        {renderText("portfolio", "text-7xl font-bold italic font-georama")}
+        {renderText("Gsap", "text-7xl font-bold italic font-georama")}
       </h1>
       <div className="small-screen">
           <p>This website is designed for desktop/tablet view not for mobile</p>
