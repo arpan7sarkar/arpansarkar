@@ -8,7 +8,9 @@ import {
   FinderWrapper,
   TextWindow,
   ImageWindow,
+  ContactWindow,
 } from "./windows";
+import { Home } from "./components";
 
 gsap.registerPlugin(Draggable);
 const App = () => {
@@ -23,6 +25,8 @@ const App = () => {
       <FinderWrapper />
       <TextWindow />
       <ImageWindow />
+      <ContactWindow />
+      <Home/>
     </main>
   );
 };

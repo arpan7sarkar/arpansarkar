@@ -4,6 +4,7 @@ import ResumeWindow from "./Resume";
 import FinderWrapper from "./Finder";
 import TextWindow from "./Text";
 import ImageWindow from "./Image";
+import ContactWindow from "./Contact";
 
 export {
   TerminalWindow,
@@ -12,4 +13,5 @@ export {
   FinderWrapper,
   TextWindow,
   ImageWindow,
+  ContactWindow,
 };
