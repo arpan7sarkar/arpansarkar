@@ -10,6 +10,7 @@ import {
   ImageWindow,
   ContactWindow,
 } from "./windows";
+import { Home } from "./components";
 
 gsap.registerPlugin(Draggable);
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <TextWindow />
       <ImageWindow />
       <ContactWindow />
+      <Home/>
     </main>
   );
 };
