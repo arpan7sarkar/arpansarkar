@@ -7,6 +7,7 @@ import {
   ResumeWindow,
   FinderWrapper,
   TextWindow,
+  ImageWindow,
 } from "./windows";
 
 gsap.registerPlugin(Draggable);
@@ -21,6 +22,7 @@ const App = () => {
       <ResumeWindow />
       <FinderWrapper />
       <TextWindow />
+      <ImageWindow />
     </main>
   );
 };

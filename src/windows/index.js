@@ -3,6 +3,7 @@ import SafariWindow from "./Safari";
 import ResumeWindow from "./Resume";
 import FinderWrapper from "./Finder";
 import TextWindow from "./Text";
+import ImageWindow from "./Image";
 
 export {
   TerminalWindow,
@@ -10,4 +11,5 @@ export {
   ResumeWindow,
   FinderWrapper,
   TextWindow,
+  ImageWindow,
 };
