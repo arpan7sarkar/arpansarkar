@@ -404,7 +404,7 @@ const WORK_LOCATION = {
       name: "Web Clone CLI",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-20 left-80",
+      position: "top-40 left-70",
       windowPosition: "top-[55vh] left-15",
       children: [
         {

@@ -3,6 +3,7 @@ import dayjs from "dayjs";
 import { navLinks } from "#constants";
 import { navIcons } from "../constants";
 import  useWindowStore  from "../store/windows";
+import { AlarmClock, AlarmSmoke } from "lucide-react";
 
 
 const Navbar = () => {
@@ -26,7 +27,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <time datetime="">{dayjs().format("ddd MMM D h:mm A")}</time>
+        <time dateTime="">{dayjs().format("ddd MMM D h:mm A")}</time>
       </div>
     </nav>
   );
