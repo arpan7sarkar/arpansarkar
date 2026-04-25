@@ -1,16 +1,119 @@
-# React + Vite
+# Mac Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A macOS-inspired interactive developer portfolio built with React, Vite, Tailwind CSS v4, GSAP, and Zustand.
 
-Currently, two official plugins are available:
+The app recreates a desktop-like experience with draggable windows, a dock, and app-style sections (Finder, Terminal, Safari, Photos, Contact, Resume) to showcase projects and profile content.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Mac Portfolio Preview](./public/images/wallpaper.png)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- macOS-style UI with top navbar, dock, and floating windows
+- Draggable desktop elements and smooth GSAP-powered interactions
+- Finder-inspired project explorer with nested folders/files
+- Terminal-like tech stack window
+- Safari-like blog/article viewer
+- Photos-like gallery window
+- Contact window with social links
+- Embedded PDF resume preview with download support
+- Centralized content and window state management with Zustand
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- Tailwind CSS 4 (`@tailwindcss/vite`)
+- GSAP (`gsap`, `@gsap/react`, `Draggable`)
+- Zustand + Immer
+- react-pdf
+- lucide-react
+- dayjs
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run in Development
+
+```bash
+npm run dev
+```
+
+Then open the local URL shown by Vite (usually `http://localhost:5173`).
+
+### Production Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Available Scripts
+
+- `npm run dev` - Start Vite dev server
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint
+
+## Project Structure
+
+```text
+src/
+	components/    # UI building blocks (dock, navbar, welcome, home, controls)
+	constants/     # App content + navigation + window config
+	HOC/           # Window wrapper abstraction
+	store/         # Zustand stores (window state, location state)
+	windows/       # Window apps (Finder, Terminal, Safari, Resume, etc.)
+	App.jsx        # Root desktop composition
+	index.css      # Global styles and Tailwind layers
+	main.jsx       # App entry point
+public/
+	images/        # UI assets and project/gallery images
+	icons/         # Icon assets
+	files/         # Static files (resume PDF)
+```
+
+## How to Customize
+
+### Update Portfolio Content
+
+Edit `src/constants/index.js` to change:
+
+- navbar links/icons
+- dock apps
+- finder folders/files and project metadata
+- blog posts
+- social links
+- tech stack categories
+
+### Update Resume
+
+Replace `public/files/resume.pdf` with your own file.
+
+### Update Branding/Visuals
+
+- Change hero/logo assets in `public/images/`
+- Tweak styles, layout, and responsive behavior in `src/index.css`
+
+## Notes
+
+- This interface is optimized for desktop/tablet interactions and includes limited small-screen support.
+- Vite path aliases are configured in `vite.config.js` (`#components`, `#constants`, `#store`, `#hoc`, `#windows`).
+
+## License
+
+This project is for personal portfolio use. Add a license file if you plan to distribute it publicly.
